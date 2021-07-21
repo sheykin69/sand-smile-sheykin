@@ -1,0 +1,53 @@
+.logo {
+    width: 206px;
+    height: 49px;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 49px;
+    color: #FBF2DA;
+  }
+
+    .nav-list {
+      font-family: Open Sans, Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      line-height: 33px;
+      list-style-type: none;
+    }
+
+
+      .nav-list a {
+        text-decoration: none;
+        color: #FBF2DA;
+      }
+
+    .phone {
+      width: 219px;
+      height: 33px;
+      font-family: Roboto;
+      font-size: 28px;
+      line-height: 33px;
+      color: #FBF2DA;
+
+    }
+
+.promo {
+  background-color: black;
+  width: 1440px;
+  height: 650px;
+}
+
+  .promo-title {
+    font-family: Raleway Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 116px;
+    line-height: 136px;
+    color: white;
+  }
+
+  .promo-text {
+    font-family: Open Sans Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+  }
