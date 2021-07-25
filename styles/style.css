@@ -1,6 +1,81 @@
+/* raleway-300 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('../fonts/raleway-v22-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/raleway-v22-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/raleway-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/raleway-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v20-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/open-sans-v20-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v20-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+.header {
+  background-color: #152B3C;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-    width: 206px;
-    height: 49px;
+    padding: 25px 0;
+    display: inline;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 42px;
@@ -8,46 +83,81 @@
     color: #FBF2DA;
   }
 
-    .nav-list {
-      font-family: Open Sans, Arial, Helvetica, sans-serif;
-      font-size: 24px;
-      line-height: 33px;
-      list-style-type: none;
-    }
+  .logo a {
+    text-decoration: none;
+    color: #FBF2DA;
+  }
 
+  .nav-list {
+    padding: 33.5px 0;
+    width: 599px;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    list-style-type: none;
+  }
 
-      .nav-list a {
-        text-decoration: none;
-        color: #FBF2DA;
-      }
+  .nav-list li{
+    display: inline-flex;
+  }
 
-    .phone {
-      width: 219px;
-      height: 33px;
-      font-family: Roboto;
-      font-size: 28px;
-      line-height: 33px;
+    .nav-list a {
+      text-decoration: none;
       color: #FBF2DA;
-
     }
 
+    .nav-list a:hover {
+      color: #D46240;
+    }
+
+  .phone {
+    padding: 33.5px 0;
+    display: inline;
+    width: 219px;
+    height: 33px;
+    font-family: Roboto;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FBF2DA;
+
+  }
+
+
+/* MAIN SCREEN */
 .promo {
-  background-color: black;
-  width: 1440px;
-  height: 650px;
+  background-image: url(/img/main-sreen.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-  .promo-title {
-    font-family: Raleway Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-size: 116px;
-    line-height: 136px;
-    color: white;
-  }
+.promo-bg {
+  background: linear-gradient(180deg, rgba(21, 43, 60, 0.5) 0%, rgba(21, 43, 60, 0.4) 32.81%, rgba(21, 43, 60, 0.4) 100%), url(.jpg);
+}
 
-  .promo-text {
-    font-family: Open Sans Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    line-height: 44px;
-    color: white;
-  }
+.promo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-title {
+  padding-top: 191px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 116px;
+  line-height: 136px;
+  color: white;
+}
+
+.promo-text {
+  text-align: center;
+  width: 1100px;
+  padding-bottom: 273px;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  color: white;
+}
